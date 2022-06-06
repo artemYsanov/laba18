@@ -23,7 +23,6 @@ public class Main {
 }
 class Formula{
     private static Formula formula = new Formula();
-    private static Formula Formula1;
     private int x;
     private int y;
     public static Formula getFormula(){
@@ -32,15 +31,6 @@ class Formula{
     public void setFormula(int x, int y){
         this.x = x;
         this.y = y;
-    }
-    public int getX(){
-        return x;
-    }
-    public int getY(){
-        return y;
-    }
-    public static Formula getInstance(){
-        return Formula1;
     }
     public void displayFormula(){
         double vector = 2 * x + 3 / y;
